@@ -18,7 +18,6 @@ import static org.junit.Assert.*;
 import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInAnyOrder;
 
 
-
 /**
  * Unit test, which will execute on a JVM.
  * Testing UserRepository.
