@@ -19,7 +19,6 @@ public class UserRepository{
 
     public void generateRandomUser() {
         int nombreAleatoire = 0 + (int)(Math.random() * ((FakeApiServiceGenerator.FAKE_USERS_RANDOM.size()-1 - 0) + 1));
-        System.out.println(nombreAleatoire);
         User RandomUser = FakeApiServiceGenerator.FAKE_USERS_RANDOM.get(nombreAleatoire);
         users.add(RandomUser);
     }
