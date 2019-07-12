@@ -1,18 +1,15 @@
 package com.openclassrooms.magicgithub.repository;
-import com.openclassrooms.magicgithub.api.ApiService;
 import com.openclassrooms.magicgithub.api.FakeApiServiceGenerator;
 import com.openclassrooms.magicgithub.model.User;
 
 import java.util.LinkedList;
 import java.util.List;
 
-public class UserRepository implements  ApiService{
+public class UserRepository{
 
-    private final ApiService apiService; // TODO: A utiliser
     private List<User> users;
 
-    public UserRepository(ApiService apiService) {
-        this.apiService = apiService;
+    public UserRepository() {
         this.users = new LinkedList(FakeApiServiceGenerator.FAKE_USERS);
     }
 
